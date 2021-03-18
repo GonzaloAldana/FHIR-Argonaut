@@ -1,3 +1,3 @@
-import validateXMLPatiend from "./validate/simple validation";
+import parseXMLObservation from "./parse and extract info/basic parse";
 
-validateXMLPatiend();
+parseXMLObservation();
