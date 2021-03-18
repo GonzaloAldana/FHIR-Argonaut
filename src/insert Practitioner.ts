@@ -1,13 +1,5 @@
-import Client from "fhir-kit-client";
+import fhirClient from "./client/fhir";
 
-const fhirClient: Client = new Client({
-    baseUrl: 'http://fhir.hl7fundamentals.org/r4',
-    customHeaders: {
-        "Content-Type": "application/fhir+json",
-        "Accept": "application/fhir+json"
-    }
-
-});
 
 const newPractitioner: fhir.Practitioner = {
 
