@@ -1,3 +1,3 @@
-import fillComboBox from "./extended functions/expand search or filter like";
+import validateXMLPatiend from "./validate/simple validation";
 
-fillComboBox();
+validateXMLPatiend();

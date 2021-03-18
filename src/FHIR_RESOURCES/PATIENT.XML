@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Patient xmlns="http://hl7.org/fhir">
+   <id value="49294"/>
+   <meta>
+      <versionId value="4"/>
+      <lastUpdated value="2019-66-24T20:52:24.563+00:00"/>
+   </meta>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+            MRN: 15274424-2
+            NAME: Gerard Siedel
+            PHONE #: 18009999999 </div>
+   </text>
+   <identifier>
+      <system value="www.mrn_patients.com/mrn"/>
+      <value value="9"/>
+   </identifier>
+   <name>
+      <use value="official"/>
+      <family value="Siedel"/>
+      <given value="Gerard"/>
+   </name>
+   <telecom>
+      <system value="phone"/>
+      <value value="18009999999"/>
+      <use value="work"/>
+   </telecom>
+   <gender value="male"/>
+   <birthDate value="1983-08-29"/>
+   <address>
+      <line value="Suite 50"/>
+      <city value="Ann Arbor"/>
+      <state value="Michigan"/>
+      <postalCode value="90210"/>
+      <country value="US"/>
+   </address>
+</Patient>

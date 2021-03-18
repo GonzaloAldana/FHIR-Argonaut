@@ -1,0 +1,586 @@
+{
+   "resourceType": "Bundle",
+   "id": "119773",
+   "meta": {
+      "versionId": "1",
+      "lastUpdated": "2020-01-05T19:51:37.416+00:00"
+   },
+   "type": "document",
+   "entry": [
+      {
+         "fullUrl": "f18eb7ab-056a-4648-946d-e1f65dbc8fa1",
+         "resource": {
+            "resourceType": "Composition",
+            "id": "f18eb7ab-056a-4648-946d-e1f65dbc8fa1",
+            "identifier": {
+               "system": "http://myhospital.org.uk",
+               "value": "af1814c6-a2df-40cf-9258-9f624051c641"
+            },
+            "status": "final",
+            "type": {
+               "coding": [
+                  {
+                     "system": "http://loinc.org",
+                     "code": "60591-5",
+                     "display": "Patient Summary Document"
+                  }
+               ]
+            },
+            "subject": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            },
+            "date": "2020-01-05T16:51:32-03:00",
+            "author": [
+               {
+                  "reference": "Practitioner/d52dc6e7-97fb-48f7-97f0-f43b98385528"
+               }
+            ],
+            "title": "Patient Summary For Ms. Adama Alvarado II",
+            "confidentiality": "N",
+            "attester": [
+               {
+                  "mode": "legal",
+                  "party": {
+                     "reference": "Organization/119c73b4-393f-4ff4-89e4-aa97ea642a40",
+                     "display": "New York General Clinic"
+                  }
+               }
+            ],
+            "custodian": {
+               "reference": "Organization/119c73b4-393f-4ff4-89e4-aa97ea642a40",
+               "display": "New York General Clinic"
+            },
+            "section": [
+               {
+                  "title": "Allergies and Intolerances",
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "http://loinc.org",
+                           "code": "48765-2",
+                           "display": "Allergies and Intolerance Document"
+                        }
+                     ]
+                  },
+                  "text": {
+                     "status": "generated",
+                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Food: Not Known Medication: Allergy to penicillin</div>"
+                  },
+                  "entry": [
+                     {
+                        "reference": "AllergyIntolerance/8a479df7-2a97-41ed-8ae3-7be8609442b1"
+                     },
+                     {
+                        "reference": "AllergyIntolerance/a985d6a4-f11c-4a25-9ecd-fa69456f4fce"
+                     }
+                  ]
+               },
+               {
+                  "title": "Active Problems",
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "http://loinc.org",
+                           "code": "11450-4",
+                           "display": "Problems"
+                        }
+                     ]
+                  },
+                  "text": {
+                     "status": "generated",
+                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute myocardial infarction of anterior wall, 01-Jan-2019, Active, Confirmed</div>"
+                  },
+                  "entry": [
+                     {
+                        "reference": "Condition/d8c397f1-ff66-4591-aa20-22bf862859d9"
+                     }
+                  ]
+               },
+               {
+                  "title": "Medication",
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "http://loinc.org",
+                           "code": "10160-9",
+                           "display": "Medications"
+                        }
+                     ]
+                  },
+                  "text": {
+                     "status": "generated",
+                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clopidogrel, 75mg Orally, once a day</div>"
+                  },
+                  "entry": [
+                     {
+                        "reference": "MedicationStatement/3ca22390-8bb8-4c50-8fa5-c32a30eca135"
+                     }
+                  ]
+               },
+               {
+                  "title": "Immunizations",
+                  "code": {
+                     "coding": [
+                        {
+                           "system": "http://loinc.org",
+                           "code": "11369-6",
+                           "display": "Immunizations"
+                        }
+                     ]
+                  },
+                  "text": {
+                     "status": "generated",
+                     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Influenza 10-FEB-2019 Adm by Betty Immune, MD</div>"
+                  },
+                  "entry": [
+                     {
+                        "reference": "Immunization/1bf19648-332e-4b67-b275-3ceea45cb46e"
+                     }
+                  ]
+               }
+            ]
+         }
+      },
+      {
+         "fullUrl": "86db4b5b-c90f-418d-b993-25a76a432d40",
+         "resource": {
+            "resourceType": "Patient",
+            "id": "86db4b5b-c90f-418d-b993-25a76a432d40",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ms. Adama <b>ALVARADO </b> II </div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>123456</td></tr><tr><td>Address</td><td><span>1234 Elm Street </span><br/><span>New York </span><span>NY </span><span>US </span></td></tr><tr><td>Date of birth</td><td><span>20 junio 1978</span></td></tr></tbody></table></div>"
+            },
+            "identifier": [
+               {
+                  "use": "official",
+                  "system": "http://citizens-id.gov/citizens",
+                  "value": "123456"
+               }
+            ],
+            "active": true,
+            "name": [
+               {
+                  "use": "official",
+                  "family": "Alvarado",
+                  "given": [
+                     "Adama"
+                  ],
+                  "prefix": [
+                     "Ms."
+                  ],
+                  "suffix": [
+                     "II"
+                  ]
+               }
+            ],
+            "telecom": [
+               {
+                  "system": "phone",
+                  "value": "(555) 777-9999"
+               },
+               {
+                  "system": "email",
+                  "value": "alvarado@everymail.com"
+               }
+            ],
+            "gender": "male",
+            "birthDate": "1978-06-20",
+            "address": [
+               {
+                  "line": [
+                     "1234 Elm Street"
+                  ],
+                  "city": "New York",
+                  "state": "NY",
+                  "postalCode": "90210",
+                  "country": "US"
+               }
+            ],
+            "generalPractitioner": [
+               {
+                  "reference": "Practitioner/d52dc6e7-97fb-48f7-97f0-f43b98385528",
+                  "display": "Mr. Practitio Thomas"
+               }
+            ],
+            "managingOrganization": {
+               "reference": "Organization/119c73b4-393f-4ff4-89e4-aa97ea642a40",
+               "display": "New York General Clinic"
+            }
+         }
+      },
+      {
+         "fullUrl": "119c73b4-393f-4ff4-89e4-aa97ea642a40",
+         "resource": {
+            "resourceType": "Organization",
+            "id": "119c73b4-393f-4ff4-89e4-aa97ea642a40",
+            "identifier": [
+               {
+                  "system": "http://npi.org/identifiers",
+                  "value": "7777777"
+               }
+            ],
+            "name": "New York General Clinic",
+            "telecom": [
+               {
+                  "system": "phone",
+                  "value": "(555) 888-7777"
+               }
+            ],
+            "address": [
+               {
+                  "line": [
+                     "1234 Org Street"
+                  ],
+                  "city": "New York",
+                  "state": "NY",
+                  "postalCode": "90210",
+                  "country": "US"
+               }
+            ]
+         }
+      },
+      {
+         "fullUrl": "d52dc6e7-97fb-48f7-97f0-f43b98385528",
+         "resource": {
+            "resourceType": "Practitioner",
+            "id": "d52dc6e7-97fb-48f7-97f0-f43b98385528",
+            "identifier": [
+               {
+                  "use": "official",
+                  "system": "http://physicians-id.gov/physicians",
+                  "value": "8888888"
+               }
+            ],
+            "name": [
+               {
+                  "use": "official",
+                  "family": "Thomas",
+                  "given": [
+                     "Practitio"
+                  ],
+                  "prefix": [
+                     "Mr."
+                  ]
+               }
+            ],
+            "telecom": [
+               {
+                  "system": "phone",
+                  "value": "(555) 666-6777"
+               },
+               {
+                  "system": "email",
+                  "value": "practitio@everymail.com"
+               }
+            ],
+            "address": [
+               {
+                  "line": [
+                     "4321 Med Street"
+                  ],
+                  "city": "New York",
+                  "state": "NY",
+                  "postalCode": "90210",
+                  "country": "US"
+               }
+            ]
+         }
+      },
+      {
+         "fullUrl": "d8c397f1-ff66-4591-aa20-22bf862859d9",
+         "resource": {
+            "resourceType": "Condition",
+            "id": "d8c397f1-ff66-4591-aa20-22bf862859d9",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Acute myocardial infarction of anterior wall, 01-Jan-2019, Active, Confirmed</div>"
+            },
+            "clinicalStatus": {
+               "coding": [
+                  {
+                     "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                     "code": "active",
+                     "display": "Active"
+                  }
+               ]
+            },
+            "verificationStatus": {
+               "coding": [
+                  {
+                     "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                     "code": "confirmed",
+                     "display": "Confirmed"
+                  }
+               ]
+            },
+            "category": [
+               {
+                  "coding": [
+                     {
+                        "system": "http://loinc.org",
+                        "code": "75326-9",
+                        "display": "Problem"
+                     }
+                  ]
+               }
+            ],
+            "severity": {
+               "coding": [
+                  {
+                     "system": "http://loinc.org",
+                     "code": "LA6751-7",
+                     "display": "Moderate"
+                  }
+               ]
+            },
+            "code": {
+               "coding": [
+                  {
+                     "system": "http://snomed.info/sct",
+                     "code": "54329005",
+                     "display": "Acute myocardial infarction of anterior wall"
+                  }
+               ]
+            },
+            "subject": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            },
+            "onsetDateTime": "2019-01-01T00:00:00-03:00",
+            "asserter": {
+               "reference": "Practitioner/d52dc6e7-97fb-48f7-97f0-f43b98385528",
+               "display": "Mr. Practitio Thomas"
+            }
+         }
+      },
+      {
+         "fullUrl": "3ca22390-8bb8-4c50-8fa5-c32a30eca135",
+         "resource": {
+            "resourceType": "MedicationStatement",
+            "id": "3ca22390-8bb8-4c50-8fa5-c32a30eca135",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Clopidogrel, 75mg Orally, once a day</div>"
+            },
+            "status": "active",
+            "medicationCodeableConcept": {
+               "coding": [
+                  {
+                     "system": "http://snomed.info/sct",
+                     "code": "108979001",
+                     "display": "Clopidogrel"
+                  }
+               ]
+            },
+            "subject": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            },
+            "informationSource": {
+               "reference": "Practitioner/d52dc6e7-97fb-48f7-97f0-f43b98385528",
+               "display": "Mr. Practitio Thomas"
+            },
+            "reasonReference": [
+               {
+                  "reference": "Condition/d8c397f1-ff66-4591-aa20-22bf862859d9"
+               }
+            ],
+            "dosage": [
+               {
+                  "text": "75 mg orally once a day",
+                  "timing": {
+                     "code": {
+                        "coding": [
+                           {
+                              "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                              "code": "QD",
+                              "display": "Daily"
+                           }
+                        ]
+                     }
+                  },
+                  "route": {
+                     "coding": [
+                        {
+                           "system": " http://standardterms.edqm.eu",
+                           "code": "20053000",
+                           "display": "Oral"
+                        }
+                     ]
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "fullUrl": "a985d6a4-f11c-4a25-9ecd-fa69456f4fce",
+         "resource": {
+            "resourceType": "AllergyIntolerance",
+            "id": "a985d6a4-f11c-4a25-9ecd-fa69456f4fce",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">ALLERGY - MEDICATION - CRITICALITY -HIGH -PENICILLIN</div>"
+            },
+            "type": "allergy",
+            "category": [
+               "medication"
+            ],
+            "criticality": "high",
+            "code": {
+               "coding": [
+                  {
+                     "system": "http://snomed.info/sct",
+                     "code": "373270004",
+                     "display": "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+                  }
+               ]
+            },
+            "patient": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            }
+         }
+      },
+      {
+         "fullUrl": "8a479df7-2a97-41ed-8ae3-7be8609442b1",
+         "resource": {
+            "resourceType": "AllergyIntolerance",
+            "id": "8a479df7-2a97-41ed-8ae3-7be8609442b1",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Known Food Allergies</div>"
+            },
+            "type": "allergy",
+            "category": [
+               "food"
+            ],
+            "code": {
+               "coding": [
+                  {
+                     "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+                     "code": "no-known-food-allergies",
+                     "display": "No Known Food Allergies"
+                  }
+               ]
+            },
+            "patient": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            }
+         }
+      },
+      {
+         "fullUrl": "1bf19648-332e-4b67-b275-3ceea45cb46e",
+         "resource": {
+            "resourceType": "Immunization",
+            "id": "1bf19648-332e-4b67-b275-3ceea45cb46e",
+            "text": {
+               "status": "generated",
+               "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Influenza 10-FEB-2019 Adm by Betty Immune, MD</div>"
+            },
+            "status": "completed",
+            "vaccineCode": {
+               "coding": [
+                  {
+                     "system": "http://www.whocc.no/atc",
+                     "code": "J07BB02",
+                     "display": "influenza, inactivated, split virus or surface antigen "
+                  }
+               ]
+            },
+            "patient": {
+               "reference": "Patient/86db4b5b-c90f-418d-b993-25a76a432d40",
+               "display": "Ms. Adama Alvarado II"
+            },
+            "recorded": "2019-02-10T00:00:00-03:00",
+            "primarySource": false,
+            "reportOrigin": {
+               "coding": [
+                  {
+                     "system": "http://hl7.org/fhir/R4/codesystem-immunization-origin.html",
+                     "code": "PROVIDER",
+                     "display": "Other Provider"
+                  }
+               ]
+            },
+            "route": {
+               "coding": [
+                  {
+                     "system": "http://standardterms.edqm.eu",
+                     "code": "20035000",
+                     "display": "Intramuscular use"
+                  }
+               ]
+            },
+            "performer": [
+               {
+                  "function": {
+                     "coding": [
+                        {
+                           "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                           "code": "AP",
+                           "display": "Administering Provider"
+                        }
+                     ]
+                  },
+                  "actor": {
+                     "reference": "Practitioner/df29437c-9c64-4c4a-a76a-b256d14b22e3",
+                     "display": "Ms. Immune Betty MD"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "fullUrl": "df29437c-9c64-4c4a-a76a-b256d14b22e3",
+         "resource": {
+            "resourceType": "Practitioner",
+            "id": "df29437c-9c64-4c4a-a76a-b256d14b22e3",
+            "identifier": [
+               {
+                  "use": "official",
+                  "system": "http://physicians-id.gov/physicians",
+                  "value": "999999"
+               }
+            ],
+            "name": [
+               {
+                  "use": "official",
+                  "family": "Betty",
+                  "given": [
+                     "Immune"
+                  ],
+                  "prefix": [
+                     "Ms."
+                  ],
+                  "suffix": [
+                     "MD"
+                  ]
+               }
+            ],
+            "telecom": [
+               {
+                  "system": "phone",
+                  "value": "(555) 444-2222"
+               },
+               {
+                  "system": "email",
+                  "value": "immmune@everymail.com"
+               }
+            ],
+            "address": [
+               {
+                  "line": [
+                     "4322 Imm Street"
+                  ],
+                  "city": "New York",
+                  "state": "NY",
+                  "postalCode": "90210",
+                  "country": "US"
+               }
+            ]
+         }
+      }
+   ]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation>
+   <contained>
+      <Device xmlns="http://hl7.org/fhir">
+         <id value="MyDevice"></id>
+
+         <deviceName>
+            <name value="The Machine That Goes Bing"></name>
+            <type value="manufacturer-name"></type>
+
+         </deviceName>
+      </Device>
+   </contained>
+   <status value="final"/>
+   <category>
+      <coding>
+         <system
+            value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+         <code value="laboratory"/>
+      </coding>
+   </category>
+   <code>
+      <coding>
+         <system value="http://loinc.org"/>
+         <code value="882-1"/>
+         <display value="ABO and Rh group [Type] in Blood"/>
+      </coding>
+   </code>
+   <subject>
+      <reference
+         value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+   </subject>
+   <effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
+   <valueCodeableConcept>
+      <coding>
+         <system value="http://snomed.info/sct"/>
+         <code value="278149003"/>
+         <display value="Blood group A Rh(D) positive"/>
+      </coding>
+   </valueCodeableConcept>
+   <device><reference value="#MyDevice"></reference></device>
+</Observation>
