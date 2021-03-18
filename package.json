@@ -1,0 +1,23 @@
+{
+  "name": "typescript_fhir",
+  "version": "1.0.0",
+  "description": "Implementación básica de FHIR en TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc app.ts && node app.js"
+  },
+  "author": "Gonzalo",
+  "license": "ISC",
+  "dependencies": {
+    "@ahryman40k/ts-fhir-types": "^4.0.34",
+    "@types/fhir-kit-client": "^1.1.1",
+    "express": "^4.17.1",
+    "fhir-kit-client": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.35"
+  }
+}
